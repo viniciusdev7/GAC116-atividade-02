@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.font-display {
+  font-family: "Fraunces", serif;
+}
+
+::selection {
+  background-color: #1f4d3a;
+  color: #f8f6f0;
+}
+
+html.dark ::selection {
+  background-color: #7fd9a8;
+  color: #10130f;
+}
+
+:focus-visible {
+  outline: 2px solid #1f4d3a;
+  outline-offset: 3px;
+}
+
+html.dark :focus-visible {
+  outline-color: #7fd9a8;
+}
+
+#header {
+  background-color: color-mix(in srgb, #f8f6f0 88%, transparent);
+  backdrop-filter: blur(10px);
+}
+html.dark #header {
+  background-color: color-mix(in srgb, #10130f 85%, transparent);
+}
+
+.hero-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: heroIn 0.7s ease forwards;
+}
+.hero-reveal:nth-child(1) { animation-delay: 0.05s; }
+.hero-title.hero-reveal { animation-delay: 0.14s; }
+.hero-bio.hero-reveal { animation-delay: 0.24s; }
+.hero-links.hero-reveal { animation-delay: 0.34s; }
+
+@keyframes heroIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-reveal {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+.skill-tag:not(:last-child)::after {
+  content: "·";
+  margin-left: 1rem;
+  font-style: normal;
+}
+
+#mobile-menu {
+  display: none;
+}
+#mobile-menu.open {
+  display: block;
+}
+
+#menu-toggle .bar {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+#menu-toggle.open .bar:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+#menu-toggle.open .bar:nth-child(2) { opacity: 0; }
+#menu-toggle.open .bar:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* theme-toggle icon swap now handled by data-lucide sun/moon pair, see main.js */
+#theme-toggle svg { width: 18px; height: 18px; }
+html.dark #theme-toggle .icon-sun { display: none; }
+html.dark #theme-toggle .icon-moon { display: block; }
+html:not(.dark) #theme-toggle .icon-sun { display: block; }
+html:not(.dark) #theme-toggle .icon-moon { display: none; }
+
+@media (max-width: 700px) {
+  .hero-bio, .hero-links { padding-left: 0 !important; border-left: none !important; }
+}

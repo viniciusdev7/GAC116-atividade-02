@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinícius Oliveira — Portfólio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f6f4ee;
+        color: #201f1c;
+        font-family: "Inter", sans-serif;
+        padding: 2rem;
+      }
+      .wrap {
+        max-width: 480px;
+        text-align: center;
+      }
+      h1 {
+        font-family: "Fraunces", serif;
+        font-weight: 500;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        color: rgba(32, 31, 28, 0.65);
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+      .options {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      a.btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.75rem 1.75rem;
+        border-radius: 100px;
+        border: 1px solid rgba(32, 31, 28, 0.15);
+        text-decoration: none;
+        color: #201f1c;
+        font-size: 0.95rem;
+        transition: border-color 0.2s ease, transform 0.2s ease;
+      }
+      a.btn:hover {
+        border-color: #3d4a3d;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Vinícius Oliveira</h1>
+      <p>
+        Atividade Prática 2 - Página Pessoal, desenvolvida em duas versões, uma com Bootstrap e outra com Tailwind CSS
+      </p>
+      <div class="options">
+        <a class="btn" href="./bootstrap/index.html">Versão Bootstrap</a>
+        <a class="btn" href="./tailwind/index.html">Versão Tailwind</a>
+      </div>
+    </div>
+  </body>
+</html>

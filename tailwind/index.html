@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinícius Oliveira — Product Designer</title>
+    <meta
+      name="description"
+      content="Portfólio pessoal de Vinícius Oliveira, Product Designer."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="bg-[#f8f6f0] text-[#171b17] dark:bg-[#10130f] dark:text-[#eef2e8] transition-colors duration-300">
+    <header id="header" class="fixed inset-x-0 top-0 z-50 border-b border-black/10 dark:border-white/10 transition-colors duration-300">
+      <div class="max-w-[1120px] mx-auto px-7 h-[74px] flex items-center justify-between gap-8">
+        <a href="#" class="font-display text-[1.1rem] font-medium no-underline">
+          Vinícius<span class="text-[#1f4d3a] dark:text-[#7fd9a8]">.</span>
+        </a>
+
+        <ul class="hidden md:flex items-center gap-9 list-none m-0 p-0">
+          <li><a href="#sobre" class="text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] no-underline text-[0.92rem]">Sobre</a></li>
+          <li><a href="#experiencia" class="text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] no-underline text-[0.92rem]">Experiência</a></li>
+          <li><a href="#skills" class="text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] no-underline text-[0.92rem]">Skills</a></li>
+        </ul>
+
+        <div class="flex items-center gap-2.5">
+          <button id="theme-toggle" aria-label="Alternar tema claro/escuro" class="w-9 h-9 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center bg-transparent cursor-pointer hover:bg-[#1f4d3a]/10 dark:hover:bg-[#7fd9a8]/10 hover:border-[#1f4d3a]/30 dark:hover:border-[#7fd9a8]/30 p-0">
+            <i data-lucide="sun" class="icon-sun"></i>
+            <i data-lucide="moon" class="icon-moon"></i>
+          </button>
+
+          <button id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" class="md:hidden flex flex-col justify-center items-center gap-[5px] w-9 h-9 border border-black/10 dark:border-white/10 rounded-lg bg-transparent cursor-pointer p-0">
+            <span class="bar block w-4 h-[1.5px] bg-current"></span>
+            <span class="bar block w-4 h-[1.5px] bg-current"></span>
+            <span class="bar block w-4 h-[1.5px] bg-current"></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" aria-hidden="true" class="absolute right-5 top-[74px] min-w-[190px] bg-white dark:bg-[#171b16] border border-black/10 dark:border-white/10 rounded-xl p-5 shadow-lg">
+        <ul class="flex flex-col gap-3.5 list-none m-0 p-0">
+          <li><a href="#sobre" class="no-underline">Sobre</a></li>
+          <li><a href="#experiencia" class="no-underline">Experiência</a></li>
+          <li><a href="#skills" class="no-underline">Skills</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="min-h-[92vh] mt-[74px] flex items-center py-20">
+      <div class="max-w-[1120px] mx-auto px-7 w-full flex flex-col md:flex-row gap-10 md:gap-16 items-start justify-between">
+        <div class="min-w-0">
+          <p class="hero-reveal text-[0.95rem] text-[#171b17]/40 dark:text-[#eef2e8]/40 mb-4">
+            Vinícius Oliveira
+          </p>
+          <h1 class="hero-title hero-reveal font-display font-medium text-[clamp(2.8rem,7vw,5.6rem)] leading-[0.98] tracking-tight max-w-[13ch]">
+            Product<br />
+            <em class="text-[#1f4d3a] dark:text-[#7fd9a8]">Designer</em>
+          </h1>
+        </div>
+
+        <div class="w-full md:w-[320px] md:flex-shrink-0 md:pt-6">
+          <p class="hero-bio hero-reveal text-[1.05rem] leading-relaxed text-[#171b17]/60 dark:text-[#eef2e8]/62 mb-7 pl-6 border-l-2 border-[#1f4d3a]/30 dark:border-[#7fd9a8]/30">
+            Sou Product Designer na Gooxxy e estudante de Sistemas de Informação na UFLA. 
+            Trabalho entre produto, tecnologia e negócios, buscando criar experiências digitais que façam sentido para quem usa.
+          </p>
+          <div class="hero-links hero-reveal flex flex-wrap gap-2.5 pl-6">
+            <a
+              href="https://www.linkedin.com/in/vinicius-oli/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#1f4d3a] dark:bg-[#7fd9a8] text-[#f8f6f0] dark:text-[#10130f] no-underline hover:bg-[#2f6b4f] dark:hover:bg-[#9be6bd] hover:-translate-y-0.5 transition"
+            >
+              LinkedIn
+            </a>
+            <a href="#experiencia" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-black/10 dark:border-white/10 no-underline hover:border-[#1f4d3a]/30 dark:hover:border-[#7fd9a8]/30 hover:-translate-y-0.5 transition">
+              Experiência
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="border-t border-black/10 dark:border-white/10 py-28">
+      <div class="max-w-[1120px] mx-auto px-7 flex flex-col md:flex-row gap-8 md:gap-16 items-start">
+        <div class="w-full md:w-[30%] md:min-w-[220px]">
+          <p class="text-[0.92rem] text-[#1f4d3a] dark:text-[#7fd9a8] mb-2">Sobre</p>
+          <h2 class="font-display font-medium text-[clamp(1.9rem,3.6vw,2.6rem)] max-w-[20ch]">
+            Quem eu sou
+          </h2>
+        </div>
+
+        <div class="flex-1 pt-1">
+          <p class="text-[1.08rem] leading-loose text-[#171b17]/60 dark:text-[#eef2e8]/62 max-w-[58ch] mb-6">
+            Minha relação com o design começou na Emakers Jr., quando entrei sem saber muito bem onde estava me metendo. Aos poucos, fui descobrindo o quanto gostava de entender problemas, pensar em soluções e transformar ideias em algo que as pessoas pudessem usar.
+          </p>
+          <p class="text-[1.08rem] leading-loose text-[#171b17]/60 dark:text-[#eef2e8]/62 max-w-[58ch] mb-6">
+            Hoje trabalho como Product Designer na Gooxxy, onde meu dia a dia mistura produto, tecnologia e negócios. Gosto dessa conexão entre áreas e de entender como as decisões de design podem tornar um produto mais simples e útil.
+          </p>
+          <p class="text-[1.08rem] leading-loose text-[#171b17]/60 dark:text-[#eef2e8]/62 max-w-[58ch]">
+            Também sou estudante de Sistemas de Informação na UFLA (Universidade Federal de Lavras). Ainda estou construindo minha trajetória, aprendendo com cada projeto e tentando encontrar novas formas de fazer um trabalho que tenha sentido.
+          </p>
+
+          <div class="mt-9 inline-flex flex-col gap-0.5">
+            <span class="font-semibold text-[0.95rem]">UFLA</span>
+            <span class="text-[#171b17]/60 dark:text-[#eef2e8]/62 text-[0.9rem]">Sistemas de Informação</span>
+            <span class="text-[#171b17]/40 dark:text-[#eef2e8]/40 text-[0.8rem]">Em andamento</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="border-t border-black/10 dark:border-white/10 py-28">
+      <div class="max-w-[1120px] mx-auto px-7">
+        <p class="text-[0.92rem] text-[#1f4d3a] dark:text-[#7fd9a8] mb-2">Experiência</p>
+        <h2 class="font-display font-medium text-[clamp(1.9rem,3.6vw,2.6rem)] max-w-[20ch]">
+          Onde já passei
+        </h2>
+
+        <div class="mt-14 flex flex-col">
+          <div class="grid grid-cols-[3rem_1fr] sm:grid-cols-[5rem_1fr] gap-4 sm:gap-8 py-10">
+            <div></div>
+            <div>
+              <h3 class="font-display font-medium text-[1.3rem] mb-1">Product Designer Jr.</h3>
+              <p class="text-[#1f4d3a] dark:text-[#7fd9a8] text-[0.95rem] mb-1">Gooxxy</p>
+              <p class="text-[#171b17]/40 dark:text-[#eef2e8]/40 text-[0.82rem] mb-4">
+                Agosto de 2026 - atual
+              </p>
+              <p class="text-[#171b17]/60 dark:text-[#eef2e8]/62 leading-relaxed max-w-[56ch] whitespace-pre-line">
+                Participo de processos de Discovery do início ao fim, contribuindo com pesquisas, análises de usabilidade e propostas de soluções em parceria com PMs. Trabalho próximo ao time de desenvolvimento, participando de discussões e decisões que conectam design, tecnologia e negócio.
+
+                Atualmente, também atuo na exploração de novos negócios e oportunidades de produto, além de apoiar o time LATAM, na Colômbia, em iniciativas relacionadas à autenticação de clientes. Meu trabalho envolve entender problemas, propor melhorias e buscar soluções que façam sentido para os usuários e para a empresa.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[3rem_1fr] sm:grid-cols-[5rem_1fr] gap-4 sm:gap-8 py-10 border-t border-black/10 dark:border-white/10">
+            <div></div>
+            <div>
+              <h3 class="font-display font-medium text-[1.3rem] mb-1">Product Designer Estagiário</h3>
+              <p class="text-[#1f4d3a] dark:text-[#7fd9a8] text-[0.95rem] mb-1">Gooxxy</p>
+              <p class="text-[#171b17]/40 dark:text-[#eef2e8]/40 text-[0.82rem] mb-4">
+                Agosto de 2025 - Agosto de 2026
+              </p>
+              <p class="text-[#171b17]/60 dark:text-[#eef2e8]/62 leading-relaxed max-w-[56ch] whitespace-pre-line">
+                Atuei na manutenção e evolução do App Gooxxy, acompanhando a experiência dos clientes e identificando oportunidades de melhoria. Também trabalhei na evolução de sistemas internos, considerando as dores da operação e as necessidades da equipe.
+
+                Entre os projetos em que participei estão a criação do fluxo de autenticação de clientes e do onboarding automatizado do app Gooxxy, que anteriormente era realizado pelo time de Marketing. Ao longo desse período, desenvolvi minha experiência em produto digital, usabilidade e colaboração com diferentes áreas da empresa.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[3rem_1fr] sm:grid-cols-[5rem_1fr] gap-4 sm:gap-8 py-10 border-t border-black/10 dark:border-white/10">
+            <div></div>
+            <div>
+              <h3 class="font-display font-medium text-[1.3rem] mb-1">UX/UI Designer</h3>
+              <p class="text-[#1f4d3a] dark:text-[#7fd9a8] text-[0.95rem] mb-1">Emakers Jr. (Empresa Jr.)</p>
+              <p class="text-[#171b17]/40 dark:text-[#eef2e8]/40 text-[0.82rem] mb-4">
+                Junho de 2023 — Janeiro de 2024 · 9 meses 
+              </p>
+              <p class="text-[#171b17]/60 dark:text-[#eef2e8]/62 leading-relaxed max-w-[56ch] whitespace-pre-line">
+                Atuei como UX/UI Designer no redesign de uma plataforma de educação. Durante o projeto, mantive contato frequente com a stakeholder, desenvolvendo não só minhas habilidades de design, mas também minha comunicação e capacidade de negociação.
+
+                Além do trabalho com interfaces, também contribuí com designs para as redes sociais da empresa. Foi uma experiência importante para entender melhor a rotina de um designer, lidar com diferentes demandas e desenvolver uma visão mais ampla sobre como o design pode contribuir para um produto e para uma marca.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="border-t border-black/10 dark:border-white/10 py-28">
+      <div class="max-w-[1120px] mx-auto px-7">
+        <p class="text-[0.92rem] text-[#1f4d3a] dark:text-[#7fd9a8] mb-2">Ferramentas</p>
+        <h2 class="font-display font-medium text-[clamp(1.9rem,3.6vw,2.6rem)] max-w-[20ch]">
+          Com o que eu trabalho
+        </h2>
+
+        <div class="mt-12 flex flex-wrap">
+          <span class="skill-tag font-display italic text-[1.02rem] text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] transition cursor-default">Figma</span>
+          <span class="skill-tag font-display italic text-[1.02rem] text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] transition cursor-default">Miro</span>
+          <span class="skill-tag font-display italic text-[1.02rem] text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] transition cursor-default">Azure DevOps</span>
+          <span class="skill-tag font-display italic text-[1.02rem] text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] transition cursor-default">Clarity</span>
+          <span class="skill-tag font-display italic text-[1.02rem] text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] transition cursor-default">Sentry</span>
+          <span class="skill-tag font-display italic text-[1.02rem] text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] transition cursor-default">Lovable</span>
+          <span class="skill-tag font-display italic text-[1.02rem] text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] transition cursor-default">Claude</span>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="border-t border-black/10 dark:border-white/10 py-12">
+      <div class="max-w-[1120px] mx-auto px-7 flex justify-between items-center flex-wrap gap-4">
+        <p class="text-[#171b17]/40 dark:text-[#eef2e8]/40 text-[0.85rem]">
+          &copy; <span id="footer-year"></span> Vinícius Oliveira
+        </p>
+        <ul class="flex gap-5 list-none m-0 p-0">
+          <li><a href="https://www.linkedin.com/in/vinicius-oli/" target="_blank" rel="noopener noreferrer" class="text-[#171b17]/60 dark:text-[#eef2e8]/62 hover:text-[#1f4d3a] dark:hover:text-[#7fd9a8] no-underline text-[0.85rem]">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

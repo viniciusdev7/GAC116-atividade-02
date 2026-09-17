@@ -1,4 +1,4 @@
-# Página Pessoal — Vinícius Oliveira
+# Página Pessoal - Vinícius Oliveira
 
 Atividade Prática 2 (GAC116 - Programação Web): Página Pessoal / Portfólio desenvolvida em duas versões equivalentes, variando apenas o framework CSS de interface
 
@@ -17,4 +17,4 @@ Atividade Prática 2 (GAC116 - Programação Web): Página Pessoal / Portfólio 
 
 ## Publicação
 
-Publicado via GitHub Pages a partir da branch principal.
+Publicado via GitHub Pages: https://viniciusdev7.github.io/GAC116-atividade-02/
